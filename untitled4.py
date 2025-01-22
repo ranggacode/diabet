@@ -19,7 +19,8 @@ from sklearn.preprocessing import StandardScaler
 
 # Load the dataset
 def load_data():
-    url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+   # url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+   url = "https://github.com/ranggacode/diabet/blob/main/pima_diabetes.csv"
     column_names = ["Pregnancies", "Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI", "DiabetesPedigreeFunction", "Age", "Outcome"]
     data = pd.read_csv(url, names=column_names)
     return data
