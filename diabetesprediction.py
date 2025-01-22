@@ -89,7 +89,8 @@ def main():
     age = st.sidebar.number_input("Age", min_value=0, max_value=120, value=30)
 
     user_input = np.array([[pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree, age]])
-
+     # Add a button to trigger the prediction
+    if st.sidebar.button("Process"):
     # Train the model only once (you can save and load a trained model for production)
     model = train_model(X, y)
 
