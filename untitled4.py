@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1G5gTRtQApeL3QmKFTu_TOGTcUSMOyZ30
 """
 
-pip install streamlit tensorflow pandas scikit-learn
-
 import streamlit as st
 import pandas as pd
 import numpy as np
