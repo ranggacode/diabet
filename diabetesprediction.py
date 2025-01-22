@@ -17,6 +17,8 @@ from tensorflow.keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+st.set_page_config(page_title="Diabetes Disease Prediction", layout="wide")
+
 # Load the dataset
 def load_data():
     # url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
@@ -90,7 +92,7 @@ def main():
 
     user_input = np.array([[pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree, age]])
      # Add a button to trigger the prediction
-    if st.sidebar.button("Process"):
+   # if st.sidebar.button("Process"):
     # Train the model only once (you can save and load a trained model for production)
     model = train_model(X, y)
 
