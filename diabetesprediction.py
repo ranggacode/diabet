@@ -73,14 +73,14 @@ def train_model(X, y):
 
 # Streamlit user interface
 def main():
-    st.title("Prediksi Penyakit Diabetes")
+    st.title("Diabetes Disease Prediction")
 
     # Load and preprocess data
     data = load_data()
     X, y = preprocess_data(data)
 
     # Sidebar input for prediction
-    st.sidebar.header("Masukkan Data Pengguna")
+    st.sidebar.header("Input Data")
     pregnancies = st.sidebar.number_input("Pregnancies", min_value=0, max_value=20, value=1)
     glucose = st.sidebar.number_input("Glucose", min_value=0, max_value=250, value=100)
     blood_pressure = st.sidebar.number_input("Blood Pressure", min_value=0, max_value=200, value=70)
